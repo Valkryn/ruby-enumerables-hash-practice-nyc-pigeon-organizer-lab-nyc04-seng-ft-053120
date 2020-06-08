@@ -2,6 +2,7 @@ require 'pry'
 
 def nyc_pigeon_organizer(data)
   new_data = data.each_with_object({}) do | (key, value) , final_a |
+    binding.pry
     value.each do | inner_k , inner_v |
       inner_v.each do | name |
         if !final_a[name]
